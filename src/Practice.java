@@ -88,7 +88,11 @@ public static int countWords(HashSet<String> words, int n, int m) {
 
 
 // oddEvenDiff” → HashMap (values)
-public static int oddEvenDiff(int[] nums) {
+public static int oddEvenDiff(HashMap<int> even) {
+    
+
+
+
 
 
 
