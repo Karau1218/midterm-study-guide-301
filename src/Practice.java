@@ -41,19 +41,20 @@ public class Practice {
      * @return the longest word that starts with the given character
      */
     // Using ArrayList
-    public static String longestWord(ArrayList<String> words, char start) {
-        String longest = "";
+   public static String longestWord(ArrayList<String> words) {
+    if (words.isEmpty()) return "";
 
-        for (String word : words) {
-            if (word.length() > 0 && word.charAt(0) == start) {
-                if (word.length() > longest.length()) {
-                    longest = word;
-                }
-            }
+    String longest = "";
+
+    for (String word : words) {
+        if (word.length() > longest.length()) {
+            longest = word;
         }
-
-        return longest;
     }
+
+    return longest;
+}
+
 
     /**
      * Counts how many words in a HashSet have length > n and < m
@@ -96,7 +97,7 @@ public class Practice {
             }
         }
 
-        return evenSum - oddSum; // returns difference (can be negative)
+        return evenSum - oddSum; // returns the difference
     }
 
     /**
