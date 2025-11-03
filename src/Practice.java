@@ -1,15 +1,12 @@
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.HashMap;
-import java.util.Set;
 import java.util.TreeSet;
 
 public class Practice {
 
     /**
      * Returns the difference between the largest and smallest integer in an array.
-     * 
-     * @param nums a non-empty, non-null array of numbers
      * @return the difference between the largest and smallest number
      */
     // Using array
@@ -35,10 +32,7 @@ public class Practice {
 
     /**
      * Finds the longest word in an ArrayList that starts with a specific character.
-     * 
-     * @param words ArrayList of words
-     * @param start character to match at the start of the word
-     * @return the longest word that starts with the given character
+     * return the longest word that starts with the given character
      */
     // Using ArrayList
    public static String longestWord(ArrayList<String> words) {
@@ -60,8 +54,8 @@ public class Practice {
      * Counts how many words in a HashSet have length > n and < m
      * 
      * @param words HashSet of words
-     * @param n minimum length
-     * @param m maximum length
+     * n - minimum length
+     * m - maximum length
      * @return the number of words in the set with length between n and m
      */
     // Using HashSet
@@ -80,9 +74,8 @@ public class Practice {
 
     /**
      * Finds the difference between the sum of even and odd numbers in a HashMap (values)
-     * 
-     * @param numbers HashMap with Integer values
-     * @return difference between sum of even and odd numbers
+     * numbers - HashMap with Integer values
+     * return difference between sum of even and odd numbers
      */
     // Using HashMap (values)
     public static int oddEvenDiff(HashMap<String, Integer> numbers) {
@@ -101,10 +94,9 @@ public class Practice {
     }
 
     /**
-     * Finds the second-largest key in a HashMap
-     * 
-     * @param words HashMap with String keys
-     * @return the second-largest key alphabetically, or null if not enough keys
+     * Finds the second-largest key in a HashMap (keys)
+     * words - HashMap with String keys
+     * return the second-largest key alphabetically, or null if not enough keys
      */
     // Using HashMap (keys)
     public static String secondLargest(HashMap<String, Integer> words) {
@@ -117,5 +109,4 @@ public class Practice {
         sortedKeys.pollLast(); // remove largest
         return sortedKeys.last(); // second-largest
     }
-
 }
